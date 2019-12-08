@@ -7,7 +7,10 @@ require_once __DIR__ . '/../ionPHP/src/IonApp.php';
 /**
  * Create your app
  */
-$app = IonApp::create([]);
+$app = IonApp::create([
+    'default_controller' => 'pages',
+    'default_action' => 'home'
+]);
 
 /**
  * Setup the Apps DB connection

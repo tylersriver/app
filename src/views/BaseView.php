@@ -8,7 +8,7 @@ class BaseView extends AbstractView
         $this->scripts();
         $this->setBody(
             h('nav.navbar.navbar-expand-lg.navbar-dark.bg-dark',
-                h('a.navbar-brand', ['href' => '#'], 'Website Template'),
+                h('a.navbar-brand', ['href' => '#'], 'App Sample'),
                 h('button.navbar-toggler', [
                     'type' => 'button',
                     'data-toggle' => 'collapse',
@@ -40,7 +40,7 @@ class BaseView extends AbstractView
         );
         $this->setFooter(
             h('footer',
-                h('div.footer', 'Copyright Tyler Sriver | 2018 | ',
+                h('div.footer', 'Copyright Tyler Sriver | 2019 | ',
                     h('a', ['href' => 'https://github.com/tylersriver/'], 'GitHub Repo')
                 )
             )
@@ -85,7 +85,7 @@ class BaseView extends AbstractView
             ]),
             h('link', [
                 'rel' => 'stylesheet',
-                'href' => 'views/styles/global-styles.css'
+                'href' => 'web/css/global-style.css'
             ])
         ]);
     }
