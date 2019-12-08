@@ -27,7 +27,7 @@ $app->setDbInfo([
  */
 $app->setRoutes([
     'pages' => [ 
-        'overview', 
+        'home', 
         'error', 
         'login' 
     ], 
