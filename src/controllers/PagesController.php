@@ -11,4 +11,9 @@ class PagesController
     {
         ( new LoginView() )->render();
     }
+
+    public function error()
+    {
+        ( new ErrorView() )->render();
+    }
 }
