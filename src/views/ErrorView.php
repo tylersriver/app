@@ -6,7 +6,7 @@ class ErrorView extends BaseView
     {
         parent::__construct();
         $str = h('p', 'Oops, this is the error page.');
-        $str = h('p', 'Looks like something went wrong.');
-        $this->appendBody();
+        $str .= h('p', 'Looks like something went wrong.');
+        $this->appendBody($str);
     }
 }
