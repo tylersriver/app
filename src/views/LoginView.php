@@ -10,7 +10,7 @@ class LoginView extends BaseView
                 h('div.row',
                     h('div.baseContainer.col-8.offset-2',
                         h('h2', 'Login'),
-                        h('form.form-horizontal', ['action' => '/user/login', 'method' => 'POST'],
+                        h('form.form-horizontal', ['action' => 'user/login', 'method' => 'POST'],
                             h('div.form-group.row', 
                                 h('label.col-sm-2.col-form-label.col-form-label-sm', ['for' => 'username'], 'Username'),
                                 h('div.col-sm-10',
