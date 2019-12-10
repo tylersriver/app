@@ -4,6 +4,9 @@ class BaseView extends AbstractView
 {
     public function __construct()
     {
+        $this->appendHead(
+            h('base', ['href' => IonApp::getInstance()->getConfig()['root']])
+        );
         $this->styleSheets();
         $this->scripts();
         $this->setBody(
