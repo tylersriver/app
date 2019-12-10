@@ -1,5 +1,14 @@
 <?php
 
+/**
+ * BaseView Class
+ * 
+ * Here is an example of using the ion frameworks
+ * views. You can see you extend the Abstract View and then 
+ * there are several helper functions for contsructing the view.
+ * Utilize the h() function for generating nested HTML tags
+ * with properties. No need to write any html, we stick to PHP here.
+ */
 class BaseView extends AbstractView
 {
     public function __construct()
