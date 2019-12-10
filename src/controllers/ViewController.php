@@ -1,6 +1,6 @@
 <?php
 
-class PagesController 
+class ViewController 
 {
     public function home()
     {

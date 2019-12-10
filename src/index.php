@@ -8,7 +8,7 @@ require_once __DIR__ . '/../ionPHP/src/IonApp.php';
  * Create your app
  */
 $app = IonApp::create([
-    'default_controller' => 'pages',    // Request will default to this controller if none given
+    'default_controller' => 'view',    // Request will default to this controller if none given
     'default_action' => 'home',         // Request will default to this action if none given
     'root' => '//localhost/src/'        // Setup the web root for the
 ]);
@@ -26,8 +26,8 @@ $app->setDbInfo([
 /**
  * Setup the Apps routes
  */
-$app->setRoutes([
-    'pages' => [ 
+$app->getRouter()->setRoutes([
+    'view' => [ 
         'home', 
         'error', 
         'login' 

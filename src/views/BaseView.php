@@ -11,7 +11,7 @@ class BaseView extends AbstractView
         $this->scripts();
         $this->setBody(
             h('nav.navbar.navbar-expand-lg.navbar-dark.bg-dark',
-                h('a.navbar-brand', ['href' => 'pages/home'], 'App Sample'),
+                h('a.navbar-brand', ['href' => 'view/home'], 'App Sample'),
                 h('button.navbar-toggler', [
                     'type' => 'button',
                     'data-toggle' => 'collapse',
@@ -22,7 +22,7 @@ class BaseView extends AbstractView
                 ], h('span.navbar-toggler-icon')),
                 h('div.collapse.navbar-collapse', ['id' => 'navbarSupportedContent'],
                     h('ul.navbar-nav.mr-auto',
-                        h('li.nav-item', h('a.nav-link', ['href'=>'pages/home'], 'Home', h('span.sr-only', '(current)'))),
+                        h('li.nav-item', h('a.nav-link', ['href'=>'view/home'], 'Home', h('span.sr-only', '(current)'))),
                         h('li.nav-item.dropdown',
                             h('a.nav-link.dropdown-toggle', [
                                 'href' => '#',
@@ -33,8 +33,8 @@ class BaseView extends AbstractView
                                 'aria-expanded' => 'false'
                             ], 'Profile') ,
                             h('div.dropdown-menu', ['aria-labelledby' => 'navbarDropdownMenuLink'],
-                                h('a.dropdown-item', ['href' => 'pages/login'], 'Login'),
-                                h('a.dropdown-item', ['href' => 'pages/logout'], 'Logout')
+                                h('a.dropdown-item', ['href' => 'view/login'], 'Login'),
+                                h('a.dropdown-item', ['href' => 'view/logout'], 'Logout')
                             )
                         )
                     )
