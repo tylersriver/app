@@ -11,7 +11,7 @@ class BaseView extends AbstractView
         $this->scripts();
         $this->setBody(
             h('nav.navbar.navbar-expand-lg.navbar-dark.bg-dark',
-                h('a.navbar-brand', ['href' => '#'], 'App Sample'),
+                h('a.navbar-brand', ['href' => 'pages/home'], 'App Sample'),
                 h('button.navbar-toggler', [
                     'type' => 'button',
                     'data-toggle' => 'collapse',
@@ -22,7 +22,7 @@ class BaseView extends AbstractView
                 ], h('span.navbar-toggler-icon')),
                 h('div.collapse.navbar-collapse', ['id' => 'navbarSupportedContent'],
                     h('ul.navbar-nav.mr-auto',
-                        h('li.nav-item', h('a.nav-link', ['href'=>'?'], 'Home', h('span.sr-only', '(current)'))),
+                        h('li.nav-item', h('a.nav-link', ['href'=>'pages/home'], 'Home', h('span.sr-only', '(current)'))),
                         h('li.nav-item.dropdown',
                             h('a.nav-link.dropdown-toggle', [
                                 'href' => '#',
