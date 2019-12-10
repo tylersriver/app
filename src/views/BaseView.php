@@ -44,7 +44,7 @@ class BaseView extends AbstractView
         $this->setFooter(
             h('footer',
                 h('div.footer', 'Copyright Tyler Sriver | 2019 | ',
-                    h('a', ['href' => 'https://github.com/tylersriver/'], 'GitHub Repo')
+                    h('a', ['href' => 'https://github.com/tylersriver/', 'target' => '_blank'], 'GitHub Repo')
                 )
             )
         );
