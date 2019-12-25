@@ -13,6 +13,7 @@ class UserController
 
         // Validate the password
         if(empty($user) or !password_verify($password, $user['password'])) {
+            $_GET['error'] = 'Invalid login credentials. Please try again.';
             return Router::getInstance()->Call('view', 'login');
         }
 
