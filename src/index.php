@@ -43,6 +43,9 @@ $app->getRouter()->setRoutes([
         'home', 
         'error', 
         'login' 
+    ],
+    'user' => [
+        'login'
     ]
 ]);
 
