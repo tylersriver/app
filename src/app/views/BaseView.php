@@ -43,7 +43,8 @@ class BaseView extends AbstractView
                             ], 'Profile') ,
                             h('div.dropdown-menu', ['aria-labelledby' => 'navbarDropdownMenuLink'],
                                 h('a.dropdown-item', ['href' => 'view/login'], 'Login'),
-                                h('a.dropdown-item', ['href' => 'view/logout'], 'Logout')
+                                h('a.dropdown-item', ['href' => 'user/logout'], 'Logout'),
+                                h('a.dropdown-item', ['href' => 'view/new-user'], 'Create')
                             )
                         )
                     )

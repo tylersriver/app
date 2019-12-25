@@ -25,4 +25,9 @@ class ViewController
     {
         ( new ErrorView() )->render();
     }
+
+    public function NewUser()
+    {
+        ( new NewUserView() )->render();
+    }
 }
