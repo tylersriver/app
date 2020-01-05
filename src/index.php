@@ -14,7 +14,7 @@ use ionphp\App;
  * can originate from anywhere, create it here or have 
  * a separate config file stored elsewhere
  */
-$app = App::create([
+$app = App::create('app', [
     'default_controller' => 'view',    // Request will default to this controller if none given
     'default_action' => 'home',         // Request will default to this action if none given
     'root' => '//localhost/src/'        // Setup the web root for the

@@ -2,6 +2,8 @@
 
 namespace app\views;
 
+use app\views\BaseView;
+
 /**
  * LoginView Class
  * 

@@ -2,6 +2,9 @@
 
 namespace app\controllers;
 
+use ionphp\routing\Router;
+use app\models\User;
+
 class UserController
 {
     /**

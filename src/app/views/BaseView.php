@@ -2,6 +2,10 @@
 
 namespace app\views;
 
+use ionphp\view\AbstractView;
+
+use ionphp\App;
+
 /**
  * BaseView Class
  * 
@@ -16,7 +20,7 @@ class BaseView extends AbstractView
     public function __construct()
     {
         $this->appendHead(
-            h('base', ['href' => IonApp::getInstance()->getSetting('root')])
+            h('base', ['href' => App::getInstance()->getSetting('root')])
         );
         $this->styleSheets();
         $this->scripts();

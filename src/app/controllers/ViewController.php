@@ -2,6 +2,11 @@
 
 namespace app\controllers;
 
+use app\views\BaseView;
+use app\views\LoginView;
+use app\views\ErrorView;
+use app\views\NewUserView;
+
 /**
  * ViewController Class
  * 
