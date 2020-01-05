@@ -1,5 +1,7 @@
 <?php
 
+namespace app\views;
+
 class NewUserView extends BaseView
 {
     public function __construct()

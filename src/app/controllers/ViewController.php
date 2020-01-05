@@ -1,5 +1,7 @@
 <?php
 
+namespace app\controllers;
+
 /**
  * ViewController Class
  * 

@@ -1,10 +1,11 @@
 <?php
+
 /**
  * Require the App class
  */
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use ionphp\App as App;
+use ionphp\App;
 
 /**
  * Create your app
