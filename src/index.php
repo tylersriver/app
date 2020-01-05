@@ -2,7 +2,9 @@
 /**
  * Require the App class
  */
-require_once __DIR__ . '/../ionPHP/src/IonApp.php';
+require_once __DIR__ . '/../ionphp/vendor/autoload.php';
+
+use ionphp\App as App;
 
 /**
  * Create your app
@@ -11,7 +13,7 @@ require_once __DIR__ . '/../ionPHP/src/IonApp.php';
  * can originate from anywhere, create it here or have 
  * a separate config file stored elsewhere
  */
-$app = IonApp::create([
+$app = App::create([
     'default_controller' => 'view',    // Request will default to this controller if none given
     'default_action' => 'home',         // Request will default to this action if none given
     'root' => '//localhost/src/'        // Setup the web root for the

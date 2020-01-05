@@ -1,3 +1,6 @@
 .idea/
 ionPHP/
 .vscode/
+vendor/
+composer.phar
+composer.lock

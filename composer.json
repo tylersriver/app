@@ -1,0 +1,32 @@
+{
+    "name": "tylersriver/app",
+    "type": "website",
+    "description": "PHP Website demonstrating ionphp framework",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Tyler Sriver",
+        "email": "tyler.sriver@gmail.com"
+      }
+    ],
+    "require": {
+      "php": "^7.1"
+    },
+    "config": {
+      "sort-packages": true
+    },
+    "autoload": {
+      "psr-4": {
+        "app\\": "src/"
+      }
+    },
+    "autoload-dev": {
+      "psr-4": {
+      }
+    },
+    "bin": [
+      "ionphp"
+    ],
+    "require-dev": {
+    }
+  }
