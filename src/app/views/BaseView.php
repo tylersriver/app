@@ -2,9 +2,9 @@
 
 namespace app\views;
 
-use ionphp\view\AbstractView;
+use Ion\View\AbstractView;
 
-use ionphp\App;
+use Ion\App;
 
 /**
  * BaseView Class

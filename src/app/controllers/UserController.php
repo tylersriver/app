@@ -2,7 +2,7 @@
 
 namespace app\controllers;
 
-use ionphp\routing\Router;
+use Ion\Routing\Router;
 use app\models\User;
 
 class UserController

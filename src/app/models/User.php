@@ -2,7 +2,7 @@
 
 namespace app\models;
 
-use ionphp\database\ORM;
+use Ion\Database\ORM;
 
 class User extends ORM
 {
