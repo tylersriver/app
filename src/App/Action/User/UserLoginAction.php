@@ -1,6 +1,6 @@
 <?php
 
-namespace Sample\App\Action\UserAction;
+namespace Sample\App\Action\User;
 
 use Ion\Action\Action;
 use GuzzleHttp\Psr7\Response;

@@ -41,7 +41,7 @@ $app->setDbInfo([
  * pair, that is how ion handles requests
  */
 $routes = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
-    $r->addRoute('GET', '/user/login', Sample\App\Action\UserAction\UserLoginAction::class);
+    $r->addRoute('GET', '/user/login', Sample\App\Action\User\UserLoginAction::class);
 });
 $app->addRoutingMiddleware($routes);
 
