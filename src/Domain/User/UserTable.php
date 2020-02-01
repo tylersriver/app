@@ -1,10 +1,10 @@
 <?php
 
-namespace app\models;
+namespace App\Domain\User;
 
-use Ion\Database\ORM;
+use Ion\Db\Table;
 
-class User extends ORM
+class User extends Table
 {
     protected static $table = 'user';
     protected static $key = 'id';

@@ -18,7 +18,7 @@
     },
     "autoload": {
       "psr-4": {
-        "app\\": "src/app/"
+        "Sample\\": "src/"
       }
     },
     "autoload-dev": {
@@ -29,5 +29,6 @@
       "ionphp"
     ],
     "require-dev": {
+        "phpunit/phpunit": "^7.5"
     }
   }

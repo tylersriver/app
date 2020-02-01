@@ -12,7 +12,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
  * can originate from anywhere, create it here or have 
  * a separate config file stored elsewhere
  */
-$app = Ion\App::create('app', [
+$app = Ion\App::create([
     'default_controller' => 'view',    // Request will default to this controller if none given
     'default_action' => 'home',         // Request will default to this action if none given
     'root' => '//localhost/src/',       // Setup the web root for the
@@ -40,19 +40,10 @@ $app->setDbInfo([
  * the application, these will ALWAYS be a controller/action
  * pair, that is how ion handles requests
  */
-$app->getRouter()->setRoutes([
-    'view' => [ 
-        'home', 
-        'error', 
-        'login',
-        'new-user'
-    ],
-    'user' => [
-        'login',
-        'logout',
-        'create'
-    ]
-]);
+$routes = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
+    $r->addRoute('GET', '/user/login', Sample\App\Action\UserAction\UserLoginAction::class);
+});
+$app->addRoutingMiddleware($routes);
 
 /**
  * Handle the request
