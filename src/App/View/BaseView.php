@@ -1,9 +1,8 @@
 <?php
 
-namespace app\views;
+namespace Sample\App\View;
 
 use Ion\View\AbstractView;
-
 use Ion\App;
 
 /**
