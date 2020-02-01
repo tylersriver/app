@@ -10,6 +10,16 @@ class UserLoginAction extends Action
 {
     protected function action() : ResponseInterface
     {
-        return new Response(200, ['Content-Type: text/html'], 'No credentials given');
+        // Get params
+        $post = $this->request->getParsedBody();
+        $username = $post['username'] ?? null;
+        $password = $post['password'] ?? null;
+
+        // Check if passed
+        if(is_null($username) or is_null($password)) {
+            return $this->bodyResponse(400, 'Invalid Credentials');
+        }
+
+        return $this->bodyResponse(200, 'Successful login');
     }
 }

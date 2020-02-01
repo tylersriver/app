@@ -49,6 +49,11 @@ $routes = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
 $app->addRoutingMiddleware($routes);
 
 /**
+ * Add Other Middleware
+ */
+$app->add(new Sample\App\Middleware\SessionMiddleware());
+
+/**
  * Handle the request
  * 
  * Final step is to handle the incoming request
