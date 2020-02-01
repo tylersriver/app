@@ -18,10 +18,13 @@ class UserLoginAction extends Action
 
         // Check if passed
         if(is_null($username) or is_null($password)) {
-            return $this->bodyResponse(400, 'Invalid Credentials');
+            return $this->redirectResponse('/user/view/login');
         }
 
         $user = UserEntity::fromCredentials($username, $password);
+        if(is_null($user->id)) {
+            return $this->redirectResponse('/user/view/login');
+        }
 
         return $this->bodyResponse(200, 'Successful login');
     }

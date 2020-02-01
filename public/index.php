@@ -5,6 +5,8 @@
  */
 require_once __DIR__ . '/../vendor/autoload.php';
 
+error_reporting(0); 
+
 /**
  * Create your app
  * 
@@ -43,7 +45,7 @@ $app->setDbInfo([
 $routes = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     $r->addGroup('/user', function(FastRoute\RouteCollector $r){
         $r->addRoute('POST', '/login', Sample\App\Action\User\UserLoginAction::class);
-        $r->addRoute('GET', '/view/login', Sample\App\Action\User\ViewLoginAction::class);
+        $r->addRoute(['GET', 'POST'], '/view/login', Sample\App\Action\User\ViewLoginAction::class);
     });
 });
 $app->addRoutingMiddleware($routes);
