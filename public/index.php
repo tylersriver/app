@@ -5,6 +5,9 @@
  */
 require_once __DIR__ . '/../vendor/autoload.php';
 
+/**
+ * Set Error Reporting Level
+ */
 error_reporting(0); 
 
 /**
@@ -15,8 +18,6 @@ error_reporting(0);
  * a separate config file stored elsewhere
  */
 $app = Ion\App::create([
-    'default_controller' => 'view',    // Request will default to this controller if none given
-    'default_action' => 'home',         // Request will default to this action if none given
     'root' => '//localhost/',       // Setup the web root for the
     'log_dir' => __DIR__ . '\\log\\'
 ]);
