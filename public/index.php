@@ -24,16 +24,10 @@ $app = Ion\App::create([
 /**
  * Setup the Apps DB connection
  * 
- * Simple MySQL DB Connection info, requires
- * the following format. Again config array can be stored
- * in a separate config file
+ * Simple MySQL DB Connection info, 
+ * uses ConnectionInfo class for format
  */
-$app->setDbInfo([
-    'host' => 'localhost',
-    'user' => 'test',
-    'password' => 'test',
-    'db' => 'test_db'
-]);
+$app->setDbInfo(new Ion\Db\ConnectionInfo('localhost', 'test', 'test', 'test_db'));
 
 /**
  * Setup the Apps routes
@@ -47,6 +41,7 @@ $routes = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
         $r->addRoute('POST', '/login', Sample\App\Action\User\UserLoginAction::class);
         $r->addRoute(['GET', 'POST'], '/view/login', Sample\App\Action\User\ViewLoginAction::class);
         $r->addRoute(['GET', 'POST'], '/view/new', Sample\App\Action\User\NewUserViewAction::class);
+        $r->addRoute('POST', '/create', Sample\App\Action\User\CreateUserAction::class);
     });
 });
 $app->addRoutingMiddleware($routes);
