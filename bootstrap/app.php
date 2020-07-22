@@ -1,10 +1,5 @@
 <?php
 
-/**
- * Require the Autoloader
- */
-require_once __DIR__ . '/../vendor/autoload.php';
-
 /** 
  * Grab the config
  */
