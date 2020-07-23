@@ -6,12 +6,6 @@ use Sample\App\View\BaseView;
 
 /**
  * ErrorView Class
- * 
- * This view demonstrates how the views can be extended
- * endlessly to provide complex nested or dependent view.
- * Careful as this could get messy, but I leave that up to you.
- * In this example we have the BaseView which serves as the websites
- * skeleton and the other views add the body content.
  */
 class ErrorView extends BaseView
 {
