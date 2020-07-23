@@ -4,6 +4,8 @@
  * Setup the application routes
  */
 return FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
+    $r->addRoute('GET', '/', Sample\App\Action\User\UserLoginAction::class);
+
     $r->addGroup('/user', function(FastRoute\RouteCollector $r){
         $r->addRoute('POST', '/login', Sample\App\Action\User\UserLoginAction::class);
         $r->addRoute(['GET', 'POST'], '/view/login', Sample\App\Action\User\ViewLoginAction::class);
