@@ -40,7 +40,7 @@ class CreateUserAction extends Action
 
         // Create User
         UserTable::Add([
-            'username' => $username,
+            'username' => $userName,
             'password' => $hashedPassword,
             'firstName' => $firstName,
             'lastName' => $lastName,

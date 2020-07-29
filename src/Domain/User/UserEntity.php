@@ -46,7 +46,7 @@ class UserEntity extends Entity
         return $this;
     }
 
-    public static function fromCredentials(string $username, string $password): UserEntity
+    public static function fromUsername(string $username): UserEntity
     {
         $user = new Self();
 
@@ -58,8 +58,7 @@ class UserEntity extends Entity
             'password' => $user->password,
             'username' => $user->username
         ] = UserTable::GetOne([
-            'username' => $username,
-            'password' => $password
+            'username' => $username
         ]);
         return $user;
     }

@@ -21,8 +21,10 @@ class UserLoginAction extends Action
             return $this->redirectResponse('/user/view/login');
         }
 
-        $user = UserEntity::fromCredentials($username, $password);
-        if(is_null($user->id)) {
+        $user = UserEntity::fromUsername($username);
+
+        // If user doesn't exist
+        if(is_null($user->id) or !password_verify($password, $user->password)) {
             return $this->redirectResponse('/user/view/login');
         }
 
