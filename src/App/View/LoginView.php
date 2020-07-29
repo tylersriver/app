@@ -30,7 +30,7 @@ class LoginView extends BaseView
                                     h('input.form-control.form-control-sm', ['name' => 'password', 'type' => 'password', 'id' => 'password', 'palceholder' => 'Password'])
                                 )
                             ),
-                            h('button.btn.btn-primary', ['type' => 'submit'], 'Login'), h('span', ['style' => 'color: red'], $_GET['error'] ?? '')
+                            h('button.btn.btn-primary', ['type' => 'submit'], 'Login'), h('span', ['style' => 'color: red'], isset($_GET['error']) ? e($_GET['error']) : '')
                         ),
                         '<br>'
                     )
