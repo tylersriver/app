@@ -17,6 +17,8 @@ class NewUserView extends BaseView
                         // Title
                         h('h2', 'New User'),
 
+                        h('p.col-12', '* Indicates required field'),
+
                         // Create Form
                         h('form.form-horizontal', ['action' => 'user/create', 'method' => 'POST'],
                             
@@ -61,7 +63,7 @@ class NewUserView extends BaseView
 
                             // User Name
                             h('div.form-group.row', 
-                                h('label.col-sm-2.col-form-label.col-form-label-sm', ['for' => 'username'], 'Username'),
+                                h('label.col-sm-2.col-form-label.col-form-label-sm', ['for' => 'username'], 'Username *'),
                                 h('div.col-sm-10',
                                     h('input.form-control.form-control-sm', [
                                         'name' => 'username', 
@@ -74,7 +76,7 @@ class NewUserView extends BaseView
 
                             // Password
                             h('div.form-group.row', 
-                                h('label.col-sm-2.col-form-label.col-form-label-sm', ['for' => 'password'], 'Password'),
+                                h('label.col-sm-2.col-form-label.col-form-label-sm', ['for' => 'password'], 'Password *'),
                                 h('div.col-sm-10',
                                     h('input.form-control.form-control-sm', [
                                         'name' => 'password', 
@@ -87,7 +89,7 @@ class NewUserView extends BaseView
 
                             // Re-enter Password
                             h('div.form-group.row', 
-                                h('label.col-sm-2.col-form-label.col-form-label-sm', ['for' => 'password'], 'Re-Enter Password'),
+                                h('label.col-sm-2.col-form-label.col-form-label-sm', ['for' => 'password'], 'Re-Enter Password *'),
                                 h('div.col-sm-10',
                                     h('input.form-control.form-control-sm', [
                                         'name' => 'reenterpassword', 

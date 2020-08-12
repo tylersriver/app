@@ -28,14 +28,14 @@ class CreateUserAction extends Action
         // Validate password
         $validatePassword = $this->validatePassword($password, $reEnterPassword);
         if($validatePassword["result"] === false) {
-            return $this->bodyResponse(400, $validatePassword['reason']);
+            return $this->redirectResponse('/user/view/new?error=' . $validatePassword['reason']);
         }
         $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
 
         // Validate Username
         $validateUsername = $this->validateUsername($userName);
         if($validateUsername["result"] === false) {
-            return $this->bodyResponse(400, $validateUsername['reason']);
+            return $this->redirectResponse('/user/view/new?error=' . $validateUsername['reason']);
         }
 
         // Create User

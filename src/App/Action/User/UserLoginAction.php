@@ -18,7 +18,7 @@ class UserLoginAction extends Action
 
         // Check if passed
         if(is_null($username) or is_null($password)) {
-            return $this->redirectResponse('/user/view/login?error=Username and Password must not be emopty');
+            return $this->redirectResponse('/user/view/login?error=Username and Password must not be empty');
         }
 
         $user = UserEntity::fromUsername($username);
@@ -28,6 +28,10 @@ class UserLoginAction extends Action
             return $this->redirectResponse('/user/view/login?error=Username or Password is incorrect');
         }
 
-        return $this->bodyResponse(200, 'Successful login');
+        // Success!
+        $_SESSION['user'] = $user;
+        $_SESSION['lastAction'] = date('Y-m-d H:i:s');
+
+        return $this->redirectResponse('/view/home');
     }
 }
