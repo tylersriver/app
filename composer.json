@@ -10,8 +10,8 @@
       }
     ],
     "require": {
-        "php": "^7.1",
-        "tylersriver/ionphp": "dev-master"
+        "php": ">=7.4",
+        "tylersriver/yocto": "dev-main"
     },
     "config": {
       "sort-packages": true
@@ -25,10 +25,8 @@
       "psr-4": {
       }
     },
-    "bin": [
-      "ionphp"
-    ],
+    "bin": [],
     "require-dev": {
-        "phpunit/phpunit": "^7.5"
+        "phpunit/phpunit": "^9.5"
     }
   }

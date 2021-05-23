@@ -4,6 +4,9 @@
  * Step 1. Gather Dependencies
  * Require the Autoloader
  */
+use Yocto\Request;
+use function Yocto\emit;
+
 require_once __DIR__ . '/../vendor/autoload.php';
 
 /**
@@ -19,4 +22,12 @@ $app = require_once __DIR__ . '/../bootstrap/app.php';
  * 
  * handle the incoming request
  */
-$app->boot();
+$request = Request::fromGlobals();
+$response = $app->handle($request);
+
+/**
+ * Step 4. Emit Response
+ * 
+ * Echo the response back to the client
+ */
+emit($response);
