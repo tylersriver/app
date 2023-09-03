@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use Nyholm\Psr7Server\ServerRequestCreator;
 
 // Delegate static file requests back to the PHP built-in webserver
