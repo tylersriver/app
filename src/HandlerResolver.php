@@ -15,5 +15,4 @@ use Limon\Handler\HandlerResolverInterface;
  */
 class HandlerResolver extends ActionResolver implements HandlerResolverInterface
 {
-
 }
