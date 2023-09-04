@@ -20,7 +20,7 @@ return [
     // Routes mapping
     Ruta\Router::class => fn(ContainerInterface $c) =>
         cachedRouter(function($r) {
-            (require __DIR__ . '/routes.php')($r);
+            return (require __DIR__ . '/routes.php')($r);
         }, [
             'cacheDir' => $c->get('cache_dir'),
             'cacheEnabled' => $c->get('ENVIRONMENT') !== 'DEVELOPMENT'
