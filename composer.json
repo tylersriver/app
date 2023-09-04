@@ -35,8 +35,5 @@
       "psr-4": {
       }
     },
-    "bin": [],
-    "require-dev": {
-        "phpunit/phpunit": "^9.5"
-    }
-  }
+    "bin": []
+}
