@@ -11,6 +11,7 @@
     ],
     "require": {
         "php": "^8.2",
+        "franzl/whoops-middleware": "^2.0",
         "nyholm/psr7": "^1.8",
         "nyholm/psr7-server": "^1.0",
         "tyler/envase": "^0.1.3",
