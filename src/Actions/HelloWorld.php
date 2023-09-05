@@ -11,8 +11,8 @@ class HelloWorld implements Action
 {
     public function __invoke(ServerRequestInterface $request): ResponseInterface
     {
-        $uri = (string)$request->getUri();
-        return new Response(200, [], json_encode([
+        $uri = (string)$request->getUri()->getHost();
+        return new Response(200, ['Content-Type' => 'application/json'], json_encode([
             "message" => "Hello World from $uri"
         ]));
     }
