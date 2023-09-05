@@ -849,16 +849,16 @@
         },
         {
             "name": "tylersriver/limon",
-            "version": "v0.2.1",
+            "version": "v0.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tylersriver/limon.git",
-                "reference": "5300d90efe045487bba081dcf7ce36ccfa8ebac5"
+                "reference": "19b43c5d8f3d9591f8b02ee6aab29307ae85bfb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tylersriver/limon/zipball/5300d90efe045487bba081dcf7ce36ccfa8ebac5",
-                "reference": "5300d90efe045487bba081dcf7ce36ccfa8ebac5",
+                "url": "https://api.github.com/repos/tylersriver/limon/zipball/19b43c5d8f3d9591f8b02ee6aab29307ae85bfb0",
+                "reference": "19b43c5d8f3d9591f8b02ee6aab29307ae85bfb0",
                 "shasum": ""
             },
             "require": {
@@ -901,9 +901,9 @@
             "description": "Dependency-less, Simple PHP Framework",
             "support": {
                 "issues": "https://github.com/tylersriver/limon/issues",
-                "source": "https://github.com/tylersriver/limon/tree/v0.2.1"
+                "source": "https://github.com/tylersriver/limon/tree/v0.2.2"
             },
-            "time": "2023-09-04T17:17:14+00:00"
+            "time": "2023-09-05T01:42:59+00:00"
         }
     ],
     "packages-dev": [
