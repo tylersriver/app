@@ -6,7 +6,6 @@ namespace App;
 
 use Limon\Handler\ActionResolver;
 use Limon\Handler\Exception\HandlerAttributeNotSetException;
-use Limon\Handler\Exception\HandlerNotFoundException;
 use Limon\Handler\HandlerResolverInterface;
 use Psr\Http\Message\ServerRequestInterface;
 

@@ -16,6 +16,6 @@ class HelloWorld implements Action
             'Content-Type' => 'application/json'
         ], json_encode([
             "message" => "Hello World from $uri"
-        ]));
+        ], JSON_THROW_ON_ERROR));
     }
 }
