@@ -10,12 +10,14 @@ use Psr\Http\Message\ServerRequestInterface;
 
 class Home implements Action
 {
-
     public function __construct(
         private readonly Engine $engine
-    ) {  
+    ) {
     }
 
+    /**
+     * @SuppressWarnings(PHPMD.UnusedFormalParameter)
+     */
     public function __invoke(ServerRequestInterface $request): ResponseInterface
     {
         $view = $this->engine->render('index');

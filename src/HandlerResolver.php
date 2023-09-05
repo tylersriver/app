@@ -22,9 +22,9 @@ class HandlerResolver extends ActionResolver implements HandlerResolverInterface
     {
         try {
             return parent::resolve($request);
-        } catch(HandlerAttributeNotSetException $e) {
+        } catch (HandlerAttributeNotSetException $e) {
             $handler = $request->getAttribute('request-handler', null);
-            if(is_callable($handler)) {
+            if (is_callable($handler)) {
                 return $handler;
             }
             throw $e;
