@@ -1,5 +1,5 @@
 {
-    "name": "tylersriver/app",
+    "name": "tyler/app",
     "type": "website",
     "description": "PHP Website demonstrating ionphp framework",
     "license": "MIT",
@@ -15,9 +15,9 @@
         "nyholm/psr7": "^1.8",
         "nyholm/psr7-server": "^1.0",
         "tyler/envase": "^0.1.3",
+        "tyler/limon": "^0.2.2",
         "tyler/mira": "^0.1.1",
-        "tyler/ruta": "^0.1.2",
-        "tylersriver/limon": "^0.2.0"
+        "tyler/ruta": "^0.1.2"
     },
     "require-dev": {
       "mockery/mockery": "^1.5",
