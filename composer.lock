@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d7952d3444309bb27eb2fcbb85b4ed8a",
+    "content-hash": "506d687dd58ef3be2d3894718c6bd9e0",
     "packages": [
         {
             "name": "nyholm/psr7",
@@ -574,6 +574,47 @@
                 "source": "https://github.com/tylersriver/envase/tree/v0.1.6"
             },
             "time": "2023-09-04T16:25:57+00:00"
+        },
+        {
+            "name": "tyler/mira",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tylersriver/mira.git",
+                "reference": "09206ffd53bc70d02549cdd5d5602ed6624b81f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tylersriver/mira/zipball/09206ffd53bc70d02549cdd5d5602ed6624b81f9",
+                "reference": "09206ffd53bc70d02549cdd5d5602ed6624b81f9",
+                "shasum": ""
+            },
+            "require-dev": {
+                "pestphp/pest": "^1.21",
+                "phpstan/phpstan": "^1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mira\\": "src\\"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "tylersriver",
+                    "email": "tyler.w.sriver@eagles.oc.edu"
+                }
+            ],
+            "description": "Tiny template render engine",
+            "support": {
+                "issues": "https://github.com/tylersriver/mira/issues",
+                "source": "https://github.com/tylersriver/mira/tree/v0.1.1"
+            },
+            "time": "2022-10-04T21:48:19+00:00"
         },
         {
             "name": "tyler/ruta",
