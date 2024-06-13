@@ -1,5 +1,6 @@
 <?php
 
+use Limon\Handler\DefaultResolver;
 use Mira\Engine;
 use Limon\Kernel;
 use Nyholm\Psr7\Factory\Psr17Factory;
@@ -16,7 +17,7 @@ use function Ruta\cachedRouter;
 return [
     // Limon Injections
     Psr\Http\Server\RequestHandlerInterface::class => get(Kernel::class),
-    Limon\Handler\HandlerResolverInterface::class => get(App\HandlerResolver::class),
+    Limon\Handler\HandlerResolverInterface::class => get(DefaultResolver::class),
 
     // Routes mapping
     Ruta\Router::class => fn(ContainerInterface $c) =>

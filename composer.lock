@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa9556eca848a569e11a003e0e530803",
+    "content-hash": "73f9df957d21d5526c97470aab92b6b4",
     "packages": [
         {
             "name": "filp/whoops",
@@ -754,16 +754,16 @@
         },
         {
             "name": "tyler/limon",
-            "version": "v0.2.2",
+            "version": "v0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tylersriver/limon.git",
-                "reference": "19b43c5d8f3d9591f8b02ee6aab29307ae85bfb0"
+                "reference": "96ff54ab4ff87382cddd3ec396e09a500b51ebc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tylersriver/limon/zipball/19b43c5d8f3d9591f8b02ee6aab29307ae85bfb0",
-                "reference": "19b43c5d8f3d9591f8b02ee6aab29307ae85bfb0",
+                "url": "https://api.github.com/repos/tylersriver/limon/zipball/96ff54ab4ff87382cddd3ec396e09a500b51ebc0",
+                "reference": "96ff54ab4ff87382cddd3ec396e09a500b51ebc0",
                 "shasum": ""
             },
             "require": {
@@ -806,9 +806,9 @@
             "description": "Dependency-less, Simple PHP Framework",
             "support": {
                 "issues": "https://github.com/tylersriver/limon/issues",
-                "source": "https://github.com/tylersriver/limon/tree/v0.2.2"
+                "source": "https://github.com/tylersriver/limon/tree/v0.3.0"
             },
-            "time": "2023-09-05T01:42:59+00:00"
+            "time": "2024-06-13T02:15:12+00:00"
         },
         {
             "name": "tyler/mira",
