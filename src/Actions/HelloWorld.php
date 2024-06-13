@@ -2,12 +2,11 @@
 
 namespace App\Actions;
 
-use Limon\Action;
 use Nyholm\Psr7\Response;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
-class HelloWorld implements Action
+class HelloWorld
 {
     public function __invoke(ServerRequestInterface $request): ResponseInterface
     {
